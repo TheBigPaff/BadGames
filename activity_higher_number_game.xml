@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".HigherNumberGame">
+    <TextView
+            android:text="Best Score: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bestScoreText" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" app:layout_constraintVertical_bias="0.168"
+            android:textSize="24sp" app:layout_constraintHorizontal_bias="0.498"
+            android:textColor="#FF0303" android:textAlignment="center"/>
+    <Button
+            android:text="0"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:id="@+id/rightButton" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textView2"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.598" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="1.0"
+            android:onClick="rightButton" android:textSize="24sp"/>
+    <Button
+            android:text="0"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:id="@+id/leftButton" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textView2"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.004" app:layout_constraintVertical_bias="0.598"
+            android:onClick="leftButton" android:textSize="24sp"/>
+    <TextView
+            android:text="Bigger Small Game"
+            android:layout_width="207dp"
+            android:layout_height="38dp"
+            android:id="@+id/textView"
+            android:textSize="24sp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:layout_marginTop="16dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.496" android:textStyle="bold" android:textAlignment="center"/>
+    <TextView
+            android:text="Press the button with the bigger number on it"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp" app:layout_constraintTop_toBottomOf="@+id/textView"/>
+    <TextView
+            android:text="Score: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scoreText" android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" app:layout_constraintVertical_bias="0.987"
+            android:textSize="18sp"/>
+    <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="82dp"
+            android:id="@+id/timerView" android:textSize="64sp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="@+id/textView2"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.041"
+            android:textAlignment="center" android:textColor="#FF0303" android:textStyle="bold"
+            android:visibility="invisible"/>
+    <Button
+            android:text="Start Game"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/startGameButton" android:onClick="startGame"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/bestScoreText"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.002" app:layout_constraintHorizontal_bias="0.497"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
